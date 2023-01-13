@@ -1,0 +1,30 @@
+# pyproject.toml
+
+[build-system]
+requires      = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pi_printer_test"
+version = "1.0.0"
+description = "Prints pi to terminal"
+readme = "README.md"
+authors = [{ name = "Trenton Wirth"}]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["pi", "print", "test"]
+dependencies = [
+    "numpy",
+    'toml'
+]
+requires-python = ">=3.9"
+
+[project.optional-dependencies]
+dev = ["black", "bumpver", "isort", "pip-tools", "pytest"]
+
+[project.scripts]
+pi_printer = "pi_printer.__main__:main"

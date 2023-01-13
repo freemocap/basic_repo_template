@@ -1,7 +1,7 @@
 import numpy as np
 
-def f_equals():
+def pi_printer():
     print(np.pi)
 
 if __name__ == '__main__':
-    f_equals()
+    pi_printer()
