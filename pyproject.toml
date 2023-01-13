@@ -19,9 +19,18 @@ classifiers = [
 keywords = ["pi", "print", "test"]
 dependencies = [
     "numpy",
-    'toml'
+    "toml",
+    "pytest"
 ]
 requires-python = ">=3.9"
+
+[tool.bumpver]
+current_version = "v2023.01.13.1010.test"
+version_pattern = "vYYYY.0M.0D.MICRO[-TAG]"
+commit_message  = "Bump version {old_version} -> {new_version}"
+commit          = true
+tag             = true
+push            = true
 
 [project.optional-dependencies]
 dev = ["black", "bumpver", "isort", "pip-tools", "pytest"]
