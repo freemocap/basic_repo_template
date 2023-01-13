@@ -1,5 +1,7 @@
+import numpy as np
+
 def f_equals():
-    print(10)
+    print(np.pi)
 
 if __name__ == '__main__':
     f_equals()
