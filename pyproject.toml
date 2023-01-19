@@ -48,3 +48,4 @@ push            = true
 
 [project.scripts]
 basic_repo_template = "basic_repo_template.__main__:main"
+
