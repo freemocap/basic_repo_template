@@ -1,11 +1,11 @@
 """Top-level package for basic_template_repo."""
 
-__package_name__ = {{cookiecutter.project_name}}
-__version__ = "v2023.01.1004"
+__package_name__ = "{{cookiecutter.project_name}}"
+__version__ = "{{cookiecutter.project_version}}"
 
-__author__ = {{cookiecutter.author}}
-__email__ = {{cookiecutter.email}}
-__repo_owner_github_user_name__ = {{cookiecutter.repo_owner_github_user_name}}
+__author__ = """{{cookiecutter.author}}"""
+__email__ = "{{cookiecutter.email}}"
+__repo_owner_github_user_name__ = "{{cookiecutter.repo_owner_github_user_name}}"
 __repo_url__ = f"https://github.com/{__repo_owner_github_user_name__})/{__package_name__}/"
 __repo_issues_url__ = f"{__repo_url__}issues"
 
